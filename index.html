@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subscribe and Get Key</title>
+    <title>Welcome</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -139,7 +139,7 @@
 
     <div class="container hidden" id="page2">
         <h2>Create Your Key</h2>
-        <p>Please Wait And Click Continue To Get Whitelist User</p>
+        <p>Just Wait And Hit Continue To Get whitelisted</p>
         <button id="continueBtn2" class="hidden" onclick="showKey()">Continue</button>
     </div>
 
@@ -147,19 +147,19 @@
         <h2>Your Key</h2>
         <p id="keyDisplay"></p>
         <p id="countdown"></p>
-        <p id="note">Note: Cooldown will reopen on Sunday.</p>
-        <p id="successNote">Successfully Add To Whitelisted! Please return to the service for access, you have</p>
+        <p id="note">Note: Reopen On Sunday.</p>
+        <p id="successNote">You've Been Added To The Whitelist! Go Back To The Service To Get Access Now.</p>
         <button onclick="copyKey()">Copy Key</button>
     </div>
 
     <div class="container hidden" id="shutdownPage">
         <h2>Time's Up!</h2>
         <p>If You See This, It Means That Time Has Run Out and You Have to Quickly Look at the Key Before Shutdown</p>
-        <p>Note: Cooldown will reopen on Sunday.</p>
+        <p>Note: Reopen On Sunday.</p>
     </div>
 
     <script>
-        const EXPIRE_SECONDS = 40 * 1000; // 40 detik dalam milidetik
+        const EXPIRE_SECONDS = 60 * 1000; // 40 detik dalam milidetik
         const CUSTOM_KEY = 'KEY-000183'; // Ganti key ini dengan key yang Anda inginkan
         const SECRET_SALT = 'your-secret-salt-123'; // Salt untuk hash, ganti dengan nilai unik
 
