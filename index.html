@@ -12,17 +12,17 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: linear-gradient(45deg, #800080, #333333, #800080, #0000ff, #ff69b4, #ff00ff, #ffd700); /* Abu-abu Gelap menggantikan Off-White */
+            background: linear-gradient(45deg, #800080, #333333, #800080, #0000ff, #ff69b4, #ff00ff, #ffd700);
             text-align: center;
             overflow: hidden;
         }
 
         .container {
-            background: linear-gradient(45deg, #ffd700, #f0f0f0); /* Emas ke abu-abu terang */
+            background: linear-gradient(45deg, #ffd700, #f0f0f0);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-            border: 2px solid #333333; /* Border Abu-abu Gelap */
+            border: 2px solid #333333;
             position: relative;
             z-index: 1;
             opacity: 0;
@@ -38,12 +38,12 @@
         }
 
         h2 {
-            color: #ff00ff; /* Magenta */
-            text-shadow: 0 0 4px #800080; /* Ungu */
+            color: #ff00ff;
+            text-shadow: 0 0 4px #800080;
         }
 
         p {
-            color: #000000; /* Hitam */
+            color: #000000;
             font-weight: bold;
         }
 
@@ -51,9 +51,9 @@
             padding: 12px 24px;
             font-size: 16px;
             cursor: pointer;
-            background: linear-gradient(45deg, #800080, #ff69b4); /* Ungu ke Pink */
-            color: #333333; /* Abu-abu Gelap */
-            border: 2px solid #ffd700; /* Emas */
+            background: linear-gradient(45deg, #800080, #ff69b4);
+            color: #333333;
+            border: 2px solid #ffd700;
             border-radius: 8px;
             margin: 10px;
             position: relative;
@@ -68,7 +68,7 @@
         }
 
         button:hover {
-            box-shadow: 0 0 8px #ff00ff; /* Magenta */
+            box-shadow: 0 0 8px #ff00ff;
         }
 
         button::after {
@@ -78,7 +78,7 @@
             left: 50%;
             width: 0;
             height: 0;
-            background: radial-gradient(circle, #ffd700, transparent); /* Ripple Emas */
+            background: radial-gradient(circle, #ffd700, transparent);
             transform: translate(-50%, -50%);
             opacity: 0;
             transition: width 0.3s, height 0.3s, opacity 0.3s;
@@ -93,21 +93,21 @@
         #keyDisplay {
             font-weight: bold;
             margin: 20px 0;
-            color: #0000ff; /* Biru */
-            text-shadow: 0 0 4px #ff69b4; /* Pink */
+            color: #0000ff;
+            text-shadow: 0 0 4px #ff69b4;
             word-wrap: break-word;
         }
 
         #countdown {
             font-size: 16px;
-            color: #ff00ff; /* Magenta */
-            text-shadow: 0 0 2px #800080; /* Ungu */
+            color: #ff00ff;
+            text-shadow: 0 0 2px #800080;
             margin: 10px 0;
         }
 
-        #note {
+        #note, #successNote {
             font-size: 14px;
-            color: #333333; /* Abu-abu Gelap */
+            color: #333333;
             margin: 10px 0;
         }
 
@@ -116,12 +116,12 @@
         }
 
         #shutdownPage {
-            color: #ff00ff; /* Magenta */
-            text-shadow: 0 0 4px #800080; /* Ungu */
+            color: #ff00ff;
+            text-shadow: 0 0 4px #800080;
             font-size: 18px;
             padding: 20px;
-            background: linear-gradient(45deg, #ffd700, #f0f0f0); /* Emas ke abu-abu terang */
-            border: 2px solid #333333; /* Abu-abu Gelap */
+            background: linear-gradient(45deg, #ffd700, #f0f0f0);
+            border: 2px solid #333333;
             border-radius: 10px;
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
         }
@@ -148,6 +148,7 @@
         <p id="keyDisplay"></p>
         <p id="countdown"></p>
         <p id="note">Note: Cooldown will reopen on Sunday.</p>
+        <p id="successNote">Successfully Add To Whitelisted! Please return to the service for access, you have</p>
         <button onclick="copyKey()">Copy Key</button>
     </div>
 
